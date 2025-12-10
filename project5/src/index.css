@@ -1,0 +1,88 @@
+/* Ensure full height globally */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Fullscreen Center Layout */
+.auth-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4158d0, #c850c0, #ffcc70);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+/* Animated BG */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card UI */
+.auth-card {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+/* Title */
+.auth-card h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Input */
+.auth-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Button */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.auth-btn:hover {
+  background: #222;
+}
+
+/* Bottom switch link */
+.auth-switch {
+  margin-top: 15px;
+  text-align: center;
+  color: #eee;
+}
+
+.auth-switch span {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}

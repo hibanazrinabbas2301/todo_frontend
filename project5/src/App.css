@@ -1,0 +1,98 @@
+/* Dashboard Background */
+.dashboard-page {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #4158d0, #c850c0, #ffcc70);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  padding: 40px;
+  color: white;
+}
+
+/* Container */
+.dashboard-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background: black;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #222;
+}
+
+/* Task Cards */
+.task-card {
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.add-task-card {
+  margin-bottom: 40px;
+}
+
+/* Inputs */
+.task-input,
+.task-textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.task-textarea {
+  height: 80px;
+  resize: none;
+}
+
+/* Buttons */
+.task-btn,
+.delete-btn {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: black;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.task-btn:hover,
+.delete-btn:hover {
+  background: #222;
+}
+
+.task-status {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 12px;
+  background: #00000055;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.no-task-text {
+  text-align: center;
+  opacity: 0.9;
+}
